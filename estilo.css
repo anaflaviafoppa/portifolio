@@ -1,0 +1,259 @@
+
+
+/* ========================= Layout =======================*/
+html, body, .head{
+	height: 100%;
+	overflow: auto;
+	text-decoration:none;
+}
+
+body {
+	
+	background: url(imagens/Fundo7.png);
+	background-attachment: fixed;
+	overflow-x: hidden; /*excluir a barra de navegação em x*/
+
+
+}
+
+
+/* -- Barra de Navegação  -- */
+
+
+nav{
+	position: relative;
+}
+
+.menu-fixo {
+	border-radius: 2px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	
+}
+
+.menu_move{
+	background: rgba(246,246,248,1);
+}
+
+.img-logo {
+	display: block;
+	background: url('imagens/Logo.png') no-repeat;
+	background-size: contain; /*imagem de fundo terá os mesmos tamanhos indicados*/
+	color:transparent;
+}
+
+.navegacao li a{
+	color:#787777;
+	margin:0px 20px 0px 20px;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+	display:block;
+	padding: 20px 0px 20px 0px;
+
+}
+
+.navegacao li>a:hover{
+	font-style: italic;
+	-webkit-transition: 0.8s; /* Safari prior 6.1 */
+  	transition: 0.8s;
+  	/*background: rgba(246,246,248,1);*/
+  	color:#f65589;
+
+}
+
+
+
+.navegacao li>a::before{
+	
+	content: "";
+	transition: all 0.7s ease-in-out;
+	position: absolute;
+	right: 80%;
+	left: 80%;
+	bottom: 0;
+	height: 3px;
+	text-decoration: underline;
+	background-color: #f65589;
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.img-logo{
+		height: 40px;
+		width: 40px;
+
+	}
+
+	.navegacao li>a:hover::before{
+		right: 300px;
+	  	left: 0px;
+	  	color:red;
+	}
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+	.img-logo{
+		height: 50px;
+		width: 50px;
+
+	}
+
+	.navegacao li>a:hover::before{
+		right: 0px;
+	  	left: 800px;
+	  	color:red;
+	}
+
+}
+
+.navegacao li {
+	list-style: none;
+	color:red;
+}
+
+
+/* ---------------- HOME  ------------ */
+
+.home{
+	display: table;
+	width: 100%;
+	color:#232227;
+	padding: 0px 30px 0px 0px;
+	font-family: 'Playfair Display', serif;
+	text-align: right;
+	
+}
+
+
+.texto-capa{
+	display: table-cell;
+	vertical-align: middle;
+	color:red;
+	display: table-cell;
+}
+
+.home h1{
+	font-size: 100px;
+	letter-spacing: 2px;
+}
+
+.home p{
+	font-size: 30px;
+	letter-spacing: 1px;
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+	.texto-capa{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+	.texto-capa{
+		padding-top: 150px;
+	}
+
+}
+
+
+/*--------------------ABOUT-----------*/
+
+.aboutme{
+	background-color: rgba(247,107,114,0.6);
+	padding: 50px 0px 50px 0px;
+	
+}
+
+.imgabout{
+	display: relative;
+	margin-bottom: 50px;
+	-webkit-animation-name: imgabout;
+	 -webkit-animation-duration: 3s;
+	animation-delay: 1.5s;
+    animation-name: imgabout;
+    animation-duration: 3s;
+    transition-timing-function: ease-in-out;
+	
+}
+
+
+@-webkit-keyframes imgabout{
+	to  {right:0px;}
+	from   {right:400px;}
+ 
+}
+
+@keyframes imgabout {
+ 	to  {right:0px;}
+	from   {right:400px;}
+
+}
+
+.textoabout{
+	display: block;
+	color:green;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*--------------------CONTACT ME-----------*/
+
+.contactme{
+	background-color: rgb(3,41,115);
+	padding: 50px 0px 50px 0px;
+	text-align: center;
+	text-decoration: none;
+	color:rgb(11,224,176);
+	
+}
+
+
+.texto-contactme>a {
+	text-decoration: none;
+	color:rgb(11,224,176);
+	font-size: 25px;
+
+}
+
+.texto-contactme>h3{
+	color:white;
+	font-size: 40px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+}
+
+.texto-contactme>p{
+	color:rgb(84,84,88);
+	font-size: 18px;
+	font-weight: normal;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.socialmedia>a{
+	display: inline-block;
+	margin: 0px 20px 20px 20px;
+	text-decoration: none;
+	color:rgb(11,224,176);
+	font-size: 40px;
+}
+
+
+
+
