@@ -16,12 +16,67 @@ body {
 
 }
 
+/* -- Barra de Navegação TESTE -- */
+
+.navegacao-teste{
+	border: 1px solid red;
+}
+
+.navegacao-teste>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+..navegacao-teste ul>li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
 
 /* -- Barra de Navegação  -- */
 
 
+
+
 nav{
 	position: relative;
+}
+
+
+
+.minha-marca{
+    display: block;
+    font-family: 'chap-medium';
+    font-size: 30px;
+    color: #f7a2a6;
+}
+
+
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
 
 .menu-fixo {
@@ -41,7 +96,7 @@ nav{
 	color:transparent;
 }
 
-.navegacao li a{
+/*.navegacao li a{
 	color:#787777;
 	margin:0px 20px 0px 20px;
 	font-size: 20px;
@@ -52,7 +107,7 @@ nav{
 	display:block;
 	padding: 20px 0px 20px 0px;
 
-}
+}*/
 
 .navegacao li>a:hover{
 	font-style: italic;
