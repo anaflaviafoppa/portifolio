@@ -1,19 +1,35 @@
+
+/** VARIAVEIS **/
+
+/*FAQ*/
+var img_array = ['imagens/plus.svg','imagens/x.svg'];
+var change1=0;
+var change2=0;
+var change3=0;
+var change4=0;
+
+
 /*NAV BAR */
 
+     
+      window.onscroll = function() {scrollFunction()};
 
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  document.getElementById("navbar").style.backgroundColor = "green";
-} else {
-  document.getElementById("navbar").style.backgroundColor = "red";
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          document.getElementById("navbar").style.top = "-19px";
+        } else {
+          document.getElementById("navbar").style.top = "-60px";
+        }
+      }
+   
+
+/*PROJECTS*/
+
+
+function phasellus() {
+  var win=window.open("https://anaflaviafoppa.github.io/phasellus1/", "_blank");
+  win.focus();
 }
-
-
-  
-
-
-
-
-/*NAVEGACAO TESTE*/
 
 
 /*SMOTH SCROLL*/
@@ -86,46 +102,57 @@ function copyemail() {
       }*/
 
 
-
-
+    
 
       /*CHANGE BUTTON*/
 
-      var img_array = ['imagens/plus.svg','imagens/x.svg',];
-      i=0;
+      
+      
+     
 
       function change_btn1(){
-        i++;
-        document.getElementById("myImg1").src= img_array[i];
-        if (i == img_array.length - 1) {
-        i = -1;
+        change1++;
+        
+        if(change1%2 != 0){
+          document.getElementById('myImg1').src = img_array[1];
+        } else if(change1%2 === 0){
+          document.getElementById('myImg1').src = img_array[0];
         }
       }
 
-       function change_btn2(){
-        i++;
-        document.getElementById("myImg2").src= img_array[i];
-        if (i == img_array.length - 1) {
-        i = -1;
+
+      function change_btn2(){
+        change2++;
+        
+        if(change2%2 != 0){
+          document.getElementById('myImg2').src = img_array[1];
+        } else if(change2%2 === 0){
+          document.getElementById('myImg2').src = img_array[0];
         }
       }
+
 
       function change_btn3(){
-        i++;
-        document.getElementById("myImg3").src= img_array[i];
-        if (i == img_array.length - 1) {
-        i = -1;
+        change3++;
+        
+        if(change3%2 != 0){
+          document.getElementById('myImg3').src = img_array[1];
+        } else if(change3%2 === 0){
+          document.getElementById('myImg3').src = img_array[0];
         }
       }
+
 
       function change_btn4(){
-        i++;
-        document.getElementById("myImg4").src= img_array[i];
-        if (i == img_array.length - 1) {
-        i = -1;
+        change4++;
+        
+        if(change4%2 != 0){
+          document.getElementById('myImg4').src = img_array[1];
+        } else if(change4%2 === 0){
+          document.getElementById('myImg4').src = img_array[0];
         }
       }
-
+      
       /*LINKS - SOCIAL MEDIA */
 
       function mystack() {

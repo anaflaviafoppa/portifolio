@@ -37,6 +37,7 @@
     <!--SCRIPT-->
 
     <script type="text/javascript" src="efects.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -56,9 +57,11 @@
 <!--NAVBAR-->
  
 
-<nav  class="navbar navbar-expand-lg navbar-light fixed-top" >
+ 
 
-  <div id="navbar" class="container">
+<nav id="navbar"  class="navbar navbar-expand-lg navbar-light" >
+
+  <div class="container">
 
     <a href="#home" class="navbar-brand js-scroll-trigger ">
       <span class="brand minha_brand">A</span>
@@ -81,6 +84,10 @@
       </li>
 
       <li class="nav-item"  data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="nav-link" href="#projects">Projects</a> <span class="sr-only">(Projects)</span></a>
+      </li>
+
+      <li class="nav-item"  data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <a class="nav-link" href="#faq">FAQ</a> <span class="sr-only">(FAQ)</span></a>
       </li>
 
@@ -94,27 +101,17 @@
 </nav>
 
 
-
- 
-
-
-
-
-
 <!------------------HOME---------->
 
     <section id="home" class="home">
       <div class="container ">
         <div class="row">
-
+            <script type="text/javascript"> window.onscroll = function() {scrollFunction()}; </script>
 
           <!--Primeira Coluna - Albuns-->
           <div class="col-md-5 ">
             <img class="img-home img-fluid" align="right" src="imagens/Perfil.png">
           </div>
-
-
-          
 
           <div class="col-md-7 texto-capa text-lg-right text-sm-center"> 
 
@@ -141,11 +138,17 @@
       </div><!--Final do Container-->
 
 
-      
 
 
 
     </section>
+
+
+    <script>
+      
+</script>
+
+
 
 
 
@@ -185,6 +188,7 @@
 
                 <h2>Civil engineer - Foppa Engenharia</h2>
                 <h3>set 2017 - ago 2019</h3>
+
                 <p>I managed several engineering projects, focusing on structural analysis.</p>
 
               </div>
@@ -211,32 +215,46 @@
 
 
     <section id="projects" class="portifolio">
-      <div class="container ">
-        <div class="row ">
+      <div class="container textoabout">
 
-             <div class="col-md-12 textoabout">
+        <h1>Projects</h1>
 
+        <div class="row ">           
 
-              <h1>Courses</h1>
+            <div class="col-md-4">
 
-              <h2>Essencial HTML CSS training <span>33 hrs</span></h2>
-      
-              <h2>Essencial JQuery, Mtsql, PHP training <span>33 hrs</span></h2>
+              <img src="imagens/phasselus.png" alt="Avatar" class="phasselus">
 
-              <h2>PHP 7 Intermediary level <span>10 hrs</span></h2>
-              
-              <h2>Bachelor in Civil Engineering - UDESC <span>5 years</span></h2>
-
-              <h2>Master in Civil Engineering - FCT <span>6 months</span></h2>
-
+              <div class="overlay">
+                <div class="text"><a href="" onclick="phasellus()">Phasselus</a></div>
+              </div>
 
             </div><!--Final da primeria coluna-->
 
-        </div><!--Row-->
+            <div class="col-md-4">
+              <img src="imagens/phasselus.png" alt="Avatar" class="phasselus">
 
-       
+              <div class="overlay">
+                <div class="text"><a href="https://anaflaviafoppa.github.io/phasellus1/">Phasselus</a></div>
+              </div>
+
+            </div><!--Final da primeria coluna-->
+
+            <div class="col-md-4">
+              <img src="imagens/phasselus.png" alt="Avatar" class="phasselus">
+
+              <div class="overlay">
+                <div class="text"><a href="https://anaflaviafoppa.github.io/phasellus1/">Phasselus</a></div>
+              </div>
+
+            </div><!--Final da primeria coluna-->
+
+
+
+        </div><!--Row-->      
       </div><!--Container-->
-      
+
+     
     </section>
 
 
@@ -252,15 +270,15 @@
             <div class="card-header d-flex" id="headingOne" style="background-color: white; border-color:#f7a2a6;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="change_btn1()">
 
                 <div class="mr-auto p-1">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="change_btn1()">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  >
                     <h2>
                       Why did you feel the need of a change in your career choices?
                     </h2>
                 </div>
 
                 <div class="ml-auto p-2 bd-highlight">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="change_btn1()">
-                   <img id="myImg1" src="imagens/plus.svg" width="30" height="30">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   <img id="myImg1"  src="imagens/plus.svg"  width="30" height="30"  >
                   </button>
                 </div>
                   
@@ -280,7 +298,7 @@
             <div class="card-header d-flex" id="headingTwo" style="background-color: white; border-color:#f7a2a6;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" onclick="change_btn2()">
 
                 <div class="mr-auto p-2 bd-highlight">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" onclick="change_btn2()">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <h2>
                       What's your favourite kind of programming languages?
                     </h2>
@@ -288,7 +306,7 @@
                 </div>
 
                 <div class="ml-auto p-2 bd-highlight">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" onclick="change_btn2()">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                    <img id="myImg2" src="imagens/plus.svg" width="30" height="30">
                   </button>
                 </div>
@@ -309,7 +327,7 @@
             <div class="card-header d-flex" id="headingTree" style="background-color: white; border-color:#f7a2a6;" data-toggle="collapse" data-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree" onclick="change_btn3()">
 
                 <div class="mr-auto p-2 bd-highlight">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree" onclick="change_btn3()">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree">
                     <h2>
                      What makes you different?
                     </h2>
@@ -317,7 +335,7 @@
                 </div>
 
                 <div class="ml-auto p-2 bd-highlight">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree" onclick="change_btn3()">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTree" aria-expanded="true" aria-controls="collapseTree">
                     <img id="myImg3" src="imagens/plus.svg" width="30" height="30">
                   </button>
                 </div>
@@ -339,7 +357,7 @@
             <div class="card-header d-flex" id="headingFour" style="background-color: white; border-color:#f7a2a6;" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" onclick="change_btn4()" >
 
                 <div class="mr-auto p-2 bd-highlight">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" onclick="change_btn4()">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                     <h2>
                       Hobbies?
                     </h2>
@@ -347,7 +365,7 @@
                 </div>
 
                 <div class="ml-auto p-2 bd-highlight">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" onclick="change_btn4()">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                     <img id="myImg4" src="imagens/plus.svg" width="30" height="30">
                   </button>
                 </div>
@@ -364,6 +382,10 @@
 
         
       </div><!--Final do Container-->
+
+      <div class="animation4">
+        <img src="imagens/anexo3.png">
+      </div>
       
     </section>
 
@@ -378,7 +400,7 @@
         <div class="row">
 
           <div class="col-md-12 texto-contactme">
-
+            <br>
             <h1>Hire me or drop me a line</h1>
 
             <!-- The button used to copy the text -->
@@ -425,6 +447,8 @@
       
     </section>
 
+
+   
 
 
 
