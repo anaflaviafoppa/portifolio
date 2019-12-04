@@ -24,7 +24,6 @@ body {
 #navbar {
 	background-color: rgba(255,255,255,0.8);
 	position: fixed;
-	top: -60px;
 	width: 100%;
 	display: block;
 	transition: top 0.5s;
@@ -59,7 +58,7 @@ body {
 .textonavegacao li a,
 .textonavegacao li a::after{
 	transition: all 0.5s;
-	-webkit-transition: 0.5s; */ /* Safari prior 6.1 */
+	-webkit-transition: 0.5s;  /* Safari prior 6.1 */
 
 }
 
@@ -117,6 +116,23 @@ position: absolute;
 
 
 
+@media screen and (max-width: 767px) {
+	#navbar{
+		top:-70px;
+	}
+	
+}
+
+@media screen and (min-width: 768px) {
+	#navbar{
+		top:-60px;
+	}
+	
+}
+
+
+
+
 
 /* ---------------- HOME  ------------ */
 
@@ -157,11 +173,7 @@ position: absolute;
 
 .animation2{
 	position: absolute;
-	left:-20%;
-	bottom: -16%;
 	animation: animateblue 80s linear infinite;
-	height: 25%;
-	width: 100%;
 	z-index: -1;
 
 }
@@ -169,15 +181,10 @@ position: absolute;
 
 .animation3{
 	position: absolute;
-	left:-30%;
-	bottom: -20%;
 	animation: animatecircle 60s linear infinite;
 }
 
-.animation3 img{
-	height: 45%;
-	width: 45%;
-}
+
 
 
 
@@ -244,6 +251,20 @@ position: absolute;
 		line-height: 150%;
 	}
 
+
+	.animation3{
+		display: none;
+	}
+
+	.animation2{
+		left:-90%;
+		bottom: -60%;
+		height: 50%;
+		width: auto;
+	}
+
+
+	
 }
 
 @media screen and (min-width: 768px) {
@@ -270,6 +291,27 @@ position: absolute;
 		font-size: 19px;
 		line-height: 150%;
 	}
+
+
+	.animation3{
+		left:-30%;
+		bottom: -20%;
+	}
+
+
+	.animation3 img{
+		height: 45%;
+		width: 45%;
+	}
+
+
+	.animation2{
+		left:-20%;
+		bottom: -10%;
+		height: 25%;
+		width: 100%;
+	}
+
 
 }
 
@@ -434,10 +476,10 @@ position: absolute;
 
 .overlay:hover {
   opacity: 1;
+  text-transform: none;
 }
 
 .text {
-  text-transform: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -445,17 +487,72 @@ position: absolute;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+
 }
 
 .text a{
 	font-size: 30px;
 	font-family: 'Open Sans', sans-serif;
 	color: white;
+	
 }
 
 .text a:hover{
-	color:#f7a2a6;
-	text-transform: none;
+	text-decoration: none;
+	color:white;
+	
+}
+
+
+
+.text a,
+.text a::after{
+	transition: all 0.5s;
+	-webkit-transition: 0.5s;  /* Safari prior 6.1 */
+
+}
+
+
+.text a::after{
+position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #f7a2a6;
+  height: 2px;
+
+}
+
+.text a:hover::after{
+	width: 100%;
+}
+
+
+
+
+.textonavegacao li a:hover{
+	-webkit-transition: 0.8s; /* Safari prior 6.1 */
+  	transition: 0.8s;
+  	color:#f7a2a6;
+
+}
+
+
+
+.textonavegacao li a::before{
+	content: "";
+	transition: all 0.7s ease-in-out;
+	position: absolute;
+	right: 80%;
+	left: 80%;
+	bottom: 0;
+	height: 3px;
+	background-color: #f7a2a6;
+
 }
 
 
@@ -509,11 +606,7 @@ position: absolute;
 
 .animation4{
 	position: absolute;
-	left: -10%;
-	bottom: -332%;
 	animation: animatewhite 30s linear infinite;
-	height: 25%;
-	width: 100%;
 	z-index: 0;
 
 }
@@ -535,6 +628,26 @@ position: absolute;
 		
 	}
 }
+
+
+@media screen and (max-width: 767px) {
+	.animation4{
+		left: -10%;
+		bottom: -585%;
+		width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.animation4{
+		left: -10%;
+		bottom: -332%;
+		width: 100%;
+	}
+
+}
+
 
 
 

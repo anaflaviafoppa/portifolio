@@ -148,8 +148,10 @@ function copyemail() {
         
         if(change4%2 != 0){
           document.getElementById('myImg4').src = img_array[1];
+          document.getElementById('whiteAnimation').style.display = "none";
         } else if(change4%2 === 0){
           document.getElementById('myImg4').src = img_array[0];
+          document.getElementById('whiteAnimation').style.display = "block";
         }
       }
       
