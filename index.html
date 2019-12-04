@@ -34,6 +34,10 @@
 
     <link rel="stylesheet" type="text/css" href="fonts/font.css">
 
+    <!--SCRIPT-->
+
+    <script type="text/javascript" src="efects.js"></script>
+
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,37 +45,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-
-    <style type="text/css">
-
-      .bg-dark{
-        background: red !important;
-      }
-
-      .bg-dark.scrolled{
-        background: blue !important;
-        transition: background-color 200ms linear;
-      }
-      
-    </style>
-
-    <script>
-    $(function (){
-      $(document).scroll(function(){
-        var $nav = $(".bg-dark");
-        $('nav').toggleClass('scrolled', $(this).scrollTop() > 100 );
-      });
-    });
-
-    </script>
-
-    
-
-   
-
-
-    
+ 
   
 </head>
 
@@ -80,17 +54,11 @@
 <body>
 
 <!--NAVBAR-->
+ 
 
+<nav  class="navbar navbar-expand-lg navbar-light fixed-top" >
 
-<!-- <script>
-    SmoothVerticalScrolling(myelement, 275, "center");
-
-    style="background: rgba(255,255,255,0.9);"
-  </script>-->
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-
-  <div class="container">
+  <div id="navbar" class="container">
 
     <a href="#home" class="navbar-brand js-scroll-trigger ">
       <span class="brand minha_brand">A</span>
@@ -117,10 +85,6 @@
       </li>
 
       <li class="nav-item"  data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-        <a class="nav-link" href="#faq">TEST</a> <span class="sr-only">(FAQ)</span></a>
-      </li>
-
-      <li class="nav-item"  data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <a class="nav-link" href="#contactme">Contact me</a> <span class="sr-only">(Contact me)</span></a>
       </li>
       
@@ -130,6 +94,8 @@
 </nav>
 
 
+
+ 
 
 
 
@@ -147,6 +113,7 @@
             <img class="img-home img-fluid" align="right" src="imagens/Perfil.png">
           </div>
 
+
           
 
           <div class="col-md-7 texto-capa text-lg-right text-sm-center"> 
@@ -159,13 +126,28 @@
 
           </div>
 
+          <div class="animation2">
+            <img src="imagens/anexo1.png">
+          </div>
+
+          <div class="animation3">
+            <img src="imagens/anexo2.png">
+          </div>
+
+
 
         </div> <!--Finalizar a Row-->
         
       </div><!--Final do Container-->
 
 
+      
+
+
+
     </section>
+
+
 
 
     <!------------------COURSES---------->
@@ -222,6 +204,44 @@
       
     </section>
 
+
+
+    <!------------------Portifolio---------->
+
+
+
+    <section id="projects" class="portifolio">
+      <div class="container ">
+        <div class="row ">
+
+             <div class="col-md-12 textoabout">
+
+
+              <h1>Courses</h1>
+
+              <h2>Essencial HTML CSS training <span>33 hrs</span></h2>
+      
+              <h2>Essencial JQuery, Mtsql, PHP training <span>33 hrs</span></h2>
+
+              <h2>PHP 7 Intermediary level <span>10 hrs</span></h2>
+              
+              <h2>Bachelor in Civil Engineering - UDESC <span>5 years</span></h2>
+
+              <h2>Master in Civil Engineering - FCT <span>6 months</span></h2>
+
+
+            </div><!--Final da primeria coluna-->
+
+        </div><!--Row-->
+
+       
+      </div><!--Container-->
+      
+    </section>
+
+
+
+
     <!------------------FAQ---------->
     <section id="faq" class="faq" >
       <div class="container" >
@@ -234,7 +254,7 @@
                 <div class="mr-auto p-1">
                   <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="change_btn1()">
                     <h2>
-                      Why did feel the need of a change in your career choices?
+                      Why did you feel the need of a change in your career choices?
                     </h2>
                 </div>
 
@@ -362,8 +382,6 @@
             <h1>Hire me or drop me a line</h1>
 
             <!-- The button used to copy the text -->
-
-              
               
                <!--<button type="button" class="btn btn_site" onclick="copyToClipboard('#p1')" data-container="body" data-toggle="popover" data-placement="top" data-content="Copied">
                 <span style="font-size:20px" id="p1">
@@ -374,16 +392,6 @@
               <span style="font-size:20px" class= "btn_site" id="p1">
                   anaffoppa@gmail.com
               </span>
-
-
-                <!--<script>
-
-                   $(function () {
-                      $('[data-toggle="popover"]').popover()
-                    })
-
-                </script>-->
-
 
             <h3>+351 913 839 769</h3>
 
@@ -433,13 +441,8 @@
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <script src="efects.js"></script>
-    <script src="scroll.js"></script>
 
     
-
-
- 
     
 
 </body>

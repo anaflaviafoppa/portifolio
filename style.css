@@ -20,8 +20,6 @@ body {
 }
 
 
-/* ------- Barra de Navegação TESTE  ------------ */
-
 
 
 /* ------- Barra de Navegação  ------------ */
@@ -42,7 +40,7 @@ nav{
 	color:transparent;
 }
 
-.menu-fixo .menu-mov{
+.menu-mov{
 	background: green;
 	color:#787777;
 }
@@ -172,8 +170,13 @@ position: absolute;
 	color:#232227;
 	padding: 95px 0px 50px 0px;
 	text-align: right;
-	background-color: white;
 	
+
+	
+}
+
+.img-home{
+	z-index: 0;
 }
 
 
@@ -181,6 +184,7 @@ position: absolute;
 	
 	display: table-cell;
 	text-align: right;
+	
 }
 
 .home h1{
@@ -188,6 +192,7 @@ position: absolute;
 	font-family: 'chap-medium';
 	color:#f7a2a6;
 	text-align: right;
+	
 }
 
 .home h2{
@@ -195,7 +200,56 @@ position: absolute;
 	font-family: 'Open Sans', sans-serif;
 	color:#424242;
 	text-align: right;
+	
 }
+
+.animation2{
+	position: absolute;
+	left:-20%;
+	bottom: -16%;
+	animation: animateblue 80s linear infinite;
+	height: 25%;
+	width: 100%;
+	z-index: -1;
+
+}
+
+
+.animation3{
+	
+
+	position: absolute;
+	left:-20%;
+	bottom: -16%;
+	animation: animatecircle 80s linear infinite;
+}
+
+.animation3 img{
+	height: 50%;
+	width: 50%;
+}
+
+
+
+
+
+@keyframes animateblue{
+	0%{
+		transform: translateX(0px);
+	}
+
+
+	50%{
+		transform: translateX(250px);
+		
+	}
+
+	100%{
+		transform: translateX(0px);
+		
+	}
+}
+
 
 
 @media screen and (max-width: 767px) {
@@ -252,12 +306,16 @@ position: absolute;
 }
 
 
+/***************ANIMATION*******/
+
+
+
 
 
 /*--------------------ABOUT-----------*/
 
 .courses{
-	background-color: rgba(3,41,115,1);
+	background-color: #00276d;
 	padding: 50px 0px 50px 0px;
 	
 }
@@ -423,13 +481,20 @@ position: absolute;
 
 }
 
+/*------------PORTIFOLIO*/
+
+.portifolio{
+	background-image: url("imagens/background.png");
+	background-size: cover;
+}
+
 
 
 
 /*--------------------CONTACT ME-----------*/
 
 .contactme{
-	background-color: rgb(3,41,115);
+	background-color: rgba(3,41,115,1);
 	text-align: center;
 	text-decoration: none;
 	color:rgb(11,224,176);
@@ -437,7 +502,7 @@ position: absolute;
 }
 
 .texto-contactme>h1{
-	color:white;
+	color:#f7a2a6;
 	font-family: 'chap-medium';
 }
 
@@ -478,7 +543,7 @@ position: absolute;
 
 .btn_site:hover{
 	background: rgb(3,41,115);
-	color:white;
+	color:#f7a2a6;
 	font-family: 'Open Sans', sans-serif;
 	transition-duration: 0.5s;
 }

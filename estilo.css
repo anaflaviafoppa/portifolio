@@ -19,6 +19,10 @@ body {
 /* -- Barra de Navegação TESTE -- */
 
 .navegacao-teste{
+	display: none;
+}
+
+.navShow{
 	border: 1px solid red;
 }
 
@@ -27,13 +31,13 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  /*background-color: #333;*/
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
 }
 
-..navegacao-teste ul>li {
+.navegacao-teste ul>li {
   float: left;
 }
 
