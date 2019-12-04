@@ -140,7 +140,7 @@ position: absolute;
 	display: table;
 	width: 100%;
 	color:#232227;
-	padding: 95px 0px 50px 0px;
+	padding: 95px 0px 0px 0px;
 	text-align: right;
 	
 }
@@ -172,8 +172,7 @@ position: absolute;
 }
 
 .animation2{
-	position: absolute;
-	animation: animateblue 80s linear infinite;
+	animation: animateblue 10s linear infinite;
 	z-index: -1;
 
 }
@@ -181,7 +180,7 @@ position: absolute;
 
 .animation3{
 	position: absolute;
-	animation: animatecircle 60s linear infinite;
+	animation: animatecircle 80s linear infinite;
 }
 
 
@@ -192,17 +191,17 @@ position: absolute;
 
 @keyframes animateblue{
 	0%{
-		transform: translateX(0px);
+		transform: translateX(-150px);
 	}
 
 
 	50%{
-		transform: translateX(250px);
+		transform: translateX(-100px);
 		
 	}
 
 	100%{
-		transform: translateX(0px);
+		transform: translateX(-150px);
 		
 	}
 }
@@ -225,8 +224,15 @@ position: absolute;
 	}
 }
 
+@media screen and (max-width: 575px){
+	.animation2{
+		display: none;
+	}
 
-@media screen and (max-width: 767px) {
+	.animation3{
+		display: none;
+	}
+
 
 	.texto-capa{
 		padding-top: 20px;
@@ -234,7 +240,7 @@ position: absolute;
 	}
 
 	.img-home{
-		max-width:60%;
+		max-width:50%;
 		height:auto;
 	}
 
@@ -251,18 +257,39 @@ position: absolute;
 		line-height: 150%;
 	}
 
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+
+	.texto-capa{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.img-home{
+		max-width:50%;
+		height:auto;
+	}
+
+	.home{
+		padding: 50px 0px 50px 0px;
+		margin-bottom: -160px;
+	}
+
+	.home h1{
+		font-size: 45px;
+	}
+
+	.home h2{
+		font-size: 15px;
+		line-height: 150%;
+	}
+
 
 	.animation3{
 		display: none;
 	}
-
-	.animation2{
-		left:-90%;
-		bottom: -60%;
-		height: 50%;
-		width: auto;
-	}
-
 
 	
 }
@@ -281,6 +308,7 @@ position: absolute;
 
 	.home{
 		padding: 50px 0px 50px 0px;
+		margin-bottom: -160px;
 	}
 
 	.home h1{
@@ -304,13 +332,6 @@ position: absolute;
 		width: 45%;
 	}
 
-
-	.animation2{
-		left:-20%;
-		bottom: -10%;
-		height: 25%;
-		width: 100%;
-	}
 
 
 }
@@ -424,6 +445,8 @@ position: absolute;
 	}
 }
 
+/********SMALL DIV************/
+
 @media screen and (max-width: 767px) {
 
 	.textoabout h1 {
@@ -443,8 +466,7 @@ position: absolute;
 	}
 
 	.imagem{
-		max-width: 60%;
-		height: auto;
+		display:none;
 	}
 }
 
@@ -458,6 +480,12 @@ position: absolute;
   margin: 50px 0px;
   z-index: 0;
 
+}
+
+.portifolio{
+	background-image: url("imagens/background.png");
+	background-repeat: repeat;
+  	background-size: auto;
 }
 
 .overlay {
@@ -533,35 +561,14 @@ position: absolute;
 
 
 
-
-.textonavegacao li a:hover{
-	-webkit-transition: 0.8s; /* Safari prior 6.1 */
-  	transition: 0.8s;
-  	color:#f7a2a6;
-
-}
-
-
-
-.textonavegacao li a::before{
-	content: "";
-	transition: all 0.7s ease-in-out;
-	position: absolute;
-	right: 80%;
-	left: 80%;
-	bottom: 0;
-	height: 3px;
-	background-color: #f7a2a6;
-
-}
-
-
 /*--------------------FAQ-----------*/
 
 .faq{
 	background-color: white;
-	padding: 50px 0px 70px 0px;
+	padding: 50px 0px 0px 0px;
 	z-index: 0;
+	margin-bottom: -120px;
+	
 }
 
 
@@ -592,7 +599,6 @@ position: absolute;
 	text-decoration: none;
 	color:#f7a2a6;
 	z-index: 1;
-	
 }
 
 .btn_plus {
@@ -605,7 +611,6 @@ position: absolute;
 
 
 .animation4{
-	position: absolute;
 	animation: animatewhite 30s linear infinite;
 	z-index: 0;
 
@@ -614,51 +619,20 @@ position: absolute;
 
 @keyframes animatewhite{
 	0%{
-		transform: translateX(0px);
+		transform: translateX(-50px);
 	}
 
 
 	50%{
-		transform: translateX(100px);
+		transform: translateX(0px);
 		
 	}
 
 	100%{
-		transform: translateX(0px);
+		transform: translateX(-50px);
 		
 	}
 }
-
-
-@media screen and (max-width: 767px) {
-	.animation4{
-		left: -10%;
-		bottom: -585%;
-		width: 100%;
-	}
-
-}
-
-@media screen and (min-width: 768px) {
-	.animation4{
-		left: -10%;
-		bottom: -332%;
-		width: 100%;
-	}
-
-}
-
-
-
-
-
-/*------------PORTIFOLIO*/
-
-.portifolio{
-	background-image: url("imagens/background.png");
-	background-size: cover;
-}
-
 
 
 
@@ -731,8 +705,9 @@ position: absolute;
 
 
 
+/*******SMALL DIVICES****/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 576px) {
 
 	.contactme{
 	padding: 65px 0px 50px 0px;
@@ -772,6 +747,55 @@ position: absolute;
 		font-size: 35px;
 		
 	}
+
+
+
+}
+
+
+/******MEDIUM DIVICES*********/
+@media screen and (min-width:577px) and (max-width: 767px){
+
+
+	.contactme{
+	padding: 65px 0px 50px 0px;
+	text-decoration: none;
+	margin-top: 30px;	
+	}
+
+	.texto-contactme>h1{
+		font-size: 35px;
+		margin-top: 30px;
+	}
+
+
+	.texto-contactme>a {
+		font-size: 12px;
+
+	}
+
+	.texto-contactme>h3{
+		font-size: 40px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+
+	}
+
+	.texto-contactme>p{
+		font-size: 15px;
+		margin-block-start: 1em;
+	    margin-block-end: 1em;
+	    margin-inline-start: 0px;
+	    margin-inline-end: 0px;
+	}
+
+
+	.socialmedia>a{
+		margin: 0px 20px 20px 20px;
+		font-size: 35px;
+		
+	}
+
 
 
 }
@@ -818,7 +842,6 @@ position: absolute;
 		font-size: 40px;
 		
 	}
-
 
 }
 

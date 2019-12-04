@@ -86,23 +86,8 @@ function copyemail() {
         $temp.remove();
       }
 
-      /*function copyemail() {
-        /* Get the text field */
-       /* var copyText = document.getElementById("myInput");
 
-        /* Select the text field */
-       /* copyText.select();
-        copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-        /* Copy the text inside the text field */
-       /* document.execCommand("copy");
-
-        /* Alert the copied text */
-      /*  alert("Copied the text: " + copyText.value);
-      }*/
-
-
-    
+      
 
       /*CHANGE BUTTON*/
 
@@ -115,8 +100,12 @@ function copyemail() {
         
         if(change1%2 != 0){
           document.getElementById('myImg1').src = img_array[1];
+          document.getElementById('whiteAnimation').style.display = "none";
+          document.getElementById('faq').style.marginBottom = "20px";
         } else if(change1%2 === 0){
           document.getElementById('myImg1').src = img_array[0];
+          document.getElementById('whiteAnimation').style.display = "block";
+          document.getElementById('faq').style.marginBottom = "-120px";
         }
       }
 
@@ -126,8 +115,12 @@ function copyemail() {
         
         if(change2%2 != 0){
           document.getElementById('myImg2').src = img_array[1];
+          document.getElementById('whiteAnimation').style.display = "none";
+          document.getElementById('faq').style.marginBottom = "20px";
         } else if(change2%2 === 0){
           document.getElementById('myImg2').src = img_array[0];
+          document.getElementById('whiteAnimation').style.display = "block";
+          document.getElementById('faq').style.marginBottom = "-120px";
         }
       }
 
@@ -137,8 +130,12 @@ function copyemail() {
         
         if(change3%2 != 0){
           document.getElementById('myImg3').src = img_array[1];
+          document.getElementById('whiteAnimation').style.display = "none";
+          document.getElementById('faq').style.marginBottom = "20px";
         } else if(change3%2 === 0){
           document.getElementById('myImg3').src = img_array[0];
+          document.getElementById('whiteAnimation').style.display = "block";
+          document.getElementById('faq').style.marginBottom = "-120px";
         }
       }
 
@@ -149,9 +146,11 @@ function copyemail() {
         if(change4%2 != 0){
           document.getElementById('myImg4').src = img_array[1];
           document.getElementById('whiteAnimation').style.display = "none";
+          document.getElementById('faq').style.marginBottom = "20px";
         } else if(change4%2 === 0){
           document.getElementById('myImg4').src = img_array[0];
           document.getElementById('whiteAnimation').style.display = "block";
+          document.getElementById('faq').style.marginBottom = "-120px";
         }
       }
       
