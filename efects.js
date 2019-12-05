@@ -170,4 +170,12 @@ function copyemail() {
         var win=window.open("https://github.com/anaflaviafoppa", "_blank");
         win.focus();
       }
-    
+
+
+
+      /*POPOVER*/
+
+
+     $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+      });
