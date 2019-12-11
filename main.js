@@ -173,9 +173,4 @@ function copyemail() {
 
 
 
-      /*POPOVER*/
-
-
-     $(document).ready(function(){
-        $('[data-toggle="popover"]').popover();
-      });
+    
